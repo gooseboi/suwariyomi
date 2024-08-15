@@ -1,0 +1,17 @@
+[package]
+name = "suwariyomi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.5", features = ["http2"] }
+camino = { version = "1.1.7", features = ["serde"] }
+clap = { version = "4.5.15", features = ["env", "unicode", "derive"] }
+color-eyre = "0.6.3"
+maud = { version = "0.26.0", features = ["axum"] }
+parking_lot = "0.12.3"
+serde = { version = "1.0.207", features = ["derive"] }
+serde_json = "1.0.124"
+tokio = { version = "1.39.2", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
